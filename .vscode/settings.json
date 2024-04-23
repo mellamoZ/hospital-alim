@@ -1,0 +1,26 @@
+{
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 2,
+  "search.exclude": {
+    "package-lock.json": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib", // Use the workspace version of TypeScript
+  "typescript.enablePromptUseWorkspaceTsdk": true, // For security reasons it's require that users opt into using the workspace version of typescript
+
+  "prettier.ignorePath": ".gitignore" // Don't run prettier for files listed in .gitignore
+  /* 
+"typescript.preferences.autoImportFileExcludePatterns": [
+  // useRouter should be imported from `next/navigation` instead of `next/router`
+    "next/router.d.ts",
+    "next/dist/client/router.d.ts"
+  ],
+*/
+}
